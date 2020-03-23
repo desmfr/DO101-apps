@@ -5,10 +5,19 @@ var response;
 
 app.get('/', function (req, res) {
 
-    response = 'This is version 2 of the app gros.' + '\n';
+    response = 'This is version 3 of the app gros mega gros.' + '\n';
 
     //send the response to the client
     res.send(response);
+
+});
+
+app.get('/about', function (req, res) {
+
+  response = 'This is about the version 3 of the app gros mega gros.' + '\n';
+
+  //send the response to the client
+  res.send(response);
 
 });
 
